@@ -1,0 +1,6 @@
+require_relative "./slug"
+
+class SongGenre < ActiveRecord::Base
+  belongs_to :song
+  belongs_to :genre
+end

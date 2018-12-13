@@ -1,9 +1,9 @@
-class ArtistsController < ApplicationController
+class GenresController < ApplicationController
 
   #index
-  get "/artists" do
-    @artists = Artist.all
-    erb :"artists/index"
+  get "/genres" do
+    @genres = Genre.all
+    erb :"genres/index"
   end
 
   #show
